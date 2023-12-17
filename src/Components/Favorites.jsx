@@ -26,7 +26,7 @@ function Favorites() {
                     <button onClick={()=>addToCart(book)}>ADD to cart <i class="bi bi-bag-plus-fill"></i></button>
                     
             )}
-            <Link to='/'> <button>Confirm order</button> </Link>
+            <Link to='/'> <button onClick={()=>removeFromCart(book.id)}>Confirm order</button> </Link>
                     </div>
                 </div>
             ))):(
